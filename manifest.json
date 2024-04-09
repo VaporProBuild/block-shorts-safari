@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Shorts Blocker",
+    "version": "1.0",
+    "description": "Block YouTube Shorts from appearing on web pages.",
+    "content_scripts": [
+        {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
